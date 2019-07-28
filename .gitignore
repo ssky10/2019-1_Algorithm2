@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+# .vs
+*/.vs
+*/*/.vs
+
+# Debug files
+*/Debug/
+*/*/Debug/
+
+# etc
+*.hwp
+*.zip
