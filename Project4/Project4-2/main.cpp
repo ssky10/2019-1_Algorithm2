@@ -22,8 +22,8 @@ int main() {
 	int n = 5;
 	memo = new int[n + 1];
 	memset(memo, NULL, sizeof(int)*(n + 1));
-	cout << fibonacci_memo(n, memo) << endl;
-	cout << _count << endl;
+	cout << n << "의 피보나치수 : " << fibonacci_memo(n, memo) << endl;
+	//cout << _count << endl;
 	delete memo;
 	return 0;
 }

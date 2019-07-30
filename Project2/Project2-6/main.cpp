@@ -28,7 +28,7 @@ void printBit(unsigned char num) {
 	for (int i = LEN - 1; i >= 0; i--) {
 		cout << getBit(num, i);
 	}
-	cout << endl;
+	//cout << endl;
 }
 
 unsigned char setBitOn(unsigned char num, int i) {
@@ -83,6 +83,10 @@ int main() {
 	unsigned char a[BYTE], b[BYTE];
 	a[0] = readBinary("11111111"); a[1] = readBinary("10000000");
 	b[0] = readBinary("00000001"); b[1] = readBinary("00000000");
+	printBit(a[0]); printBit(a[1]);
+	cout << "과 ";
+	printBit(b[0]); printBit(b[1]);
+	cout << "의 해밍거리 : ";
 	cout << getHammingDistance(a,b) << endl;
 	return 0;
 }

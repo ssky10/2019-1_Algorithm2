@@ -71,7 +71,7 @@ bool Matrix::operator==(const Matrix& rhs) {
 }
 
 Matrix Matrix::operator*(const Matrix &rhs) {
-	Matrix result(row, rhs.col);
+	Matrix &result = * new Matrix(row, rhs.col);
 	for (int i = 0; i < result.row; i++) {
 		for (int j = 0; j < result.col; j++)
 		{

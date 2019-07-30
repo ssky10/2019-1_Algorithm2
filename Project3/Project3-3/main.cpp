@@ -13,5 +13,5 @@ double power(double x, int n) {
 }
 
 int main(void) {
-	cout << power(3, 3) << endl;
+	cout << "3^3 : " << power(3, 3) << endl;
 }

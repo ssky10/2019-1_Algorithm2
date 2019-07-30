@@ -2,15 +2,16 @@
 
 using namespace std;
 int _count = 0;
+int _countM = 0;
 
 int combination(int n, int r) {
-	//_count++;
+	_count++;
 	if (r == 0 || n == r) return 1;
 	return combination(n - 1, r - 1) + combination(n - 1, r);
 }
 
 int combination_memo(int n, int r, int** memo) {
-	_count++;
+	_countM++;
 	if (memo[n][r] != NULL) return memo[n][r];
 	if (r == 0 || n == r) return memo[n][r] = 1;
 	/*if (memo[n-1][r-1] != NULL || memo[n - 1][r] != NULL) {
@@ -32,9 +33,10 @@ int main() {
 		memo[i] = new int[r + 1];
 		memset(memo[i], NULL, sizeof(int)*(r + 1));
 	}
-	cout << combination(n, r) << endl;
-	cout << combination_memo(n, r, memo) << endl;
-	cout << _count << endl;
+	cout << n << "C" << r << " : " << combination(n, r) << endl;
+	cout << n << "C" << r << " : " << combination_memo(n, r, memo) << endl;
+	cout << "일반 재귀 방식 함수호출 수 : " << _count << endl;
+	cout << "Memoization 재귀 방식 함수호출 수 : " << _countM << endl;
 	for (int i = 0; i <= n; i++) delete[] memo[i];
 	delete[] memo;
 	return 0;

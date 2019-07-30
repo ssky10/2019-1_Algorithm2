@@ -63,5 +63,6 @@ int main(void) {
 	vector<int> vec = getRandomVector(100), sorted;
 	printVector(vec);
 	quickSort(vec.data(), vec.size());
+	cout << endl;
 	printVector(vec);
 }

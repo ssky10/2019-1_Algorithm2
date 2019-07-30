@@ -1,12 +1,12 @@
 #include <iostream>
 
 using namespace std;
-int _count = 0;
+//int _count = 0;
 
 int coin[] = { 500,100,50,10,1 };
 //500,100,50,10,1
 int chage(int n,int max_coin) {
-	_count++;
+	//_count++;
 	if (max_coin == 4) return 1;
 
 	int result = 0;
@@ -20,7 +20,7 @@ int chage(int n,int max_coin) {
 
 int main() {
 	int n = 62;
-	cout << chage(n, 0) << " / ";
-	cout << _count << endl;
+	cout << n << "원을 거슬러 줄 수 있는 경우의 수 : " << chage(n, 0) << endl;
+	//cout << _count << endl;
 	return 0;
 }

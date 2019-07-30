@@ -52,6 +52,7 @@ unsigned char getReversedBits(unsigned char num) {
 }
 
 int main() {
+	printBit(readBinary("11010101"));
 	printBit(getReversedBits(readBinary("11010101")));
 	return 0;
 }

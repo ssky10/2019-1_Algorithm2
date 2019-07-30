@@ -44,5 +44,5 @@ int binarySearch(const vector<int> &vec, int keyword) {
 int main(void) {
 	vector<int> vec = getSortedVector(50);
 	printVector(vec);
-	cout << binarySearch(vec, 5) << endl;
+	cout << "5 검색 결과 : "<< binarySearch(vec, 5) << endl;
 }

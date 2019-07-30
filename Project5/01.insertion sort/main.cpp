@@ -39,5 +39,6 @@ int main(void) {
 	vector<int> vec = getRandomVector(100), sorted;
 	printVector(vec);
 	sorted = sort(vec);
+	cout << endl;
 	printVector(sorted);
 }

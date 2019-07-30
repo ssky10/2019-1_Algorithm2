@@ -24,8 +24,12 @@ bool check(int row, int col, int* map) {
 int nQueen(int row, int n, int* map) {
 	_count++;
 	if (row == n) {
-		for (int i = 0; i < n; i++)
-			cout << map[i] << " ";
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++)
+				cout << ((map[i] == j) ? ("г╤") : ("бр"));
+			cout << endl;
+		}
+			
 		cout << endl;
 		return  1;
 	}

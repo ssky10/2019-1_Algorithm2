@@ -18,8 +18,8 @@ int fibo(int n) {
 }
 
 int main() {
-	cout << power(2, 3) << endl;
-	cout << factorial(3) << endl;
-	cout << fibo(4) << endl;
+	cout << "2^3 : " << power(2, 3) << endl;
+	cout << "3! : " << factorial(3) << endl;
+	cout << "fibo(4) : " << fibo(4) << endl;
 	return 0;
 }

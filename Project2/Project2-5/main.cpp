@@ -62,7 +62,7 @@ bool isSymmetry(unsigned char num) {
 }
 
 int main() {
-	cout << isSymmetry(readBinary("01011010")) << endl;
-	cout << isSymmetry(readBinary("10101010")) << endl;
+	cout << (int)readBinary("01011010") << " : " << isSymmetry(readBinary("01011010")) << endl;
+	cout << (int)readBinary("10101010") << " : " << isSymmetry(readBinary("10101010")) << endl;
 	return 0;
 }
