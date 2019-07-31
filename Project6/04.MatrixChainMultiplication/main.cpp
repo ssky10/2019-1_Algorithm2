@@ -35,12 +35,14 @@ int mcm(int *d) {
 			}
 		}
 	}
+	cout << "Çà·ÄÀÇ °ö¼À ÃÖ¼ÒÈ­ ½Ä : ";
 	order(1, N, K);
+	cout << endl;
 	return M[1][N];
 }
 
 int main() {
 	int d[N + 1] = { 5,2,3,4,5,7 };
-	cout << mcm(d) << endl;
+	cout << mcm(d) << "È¸" << endl;
 	return 0;
 }

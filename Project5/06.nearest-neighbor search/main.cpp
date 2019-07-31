@@ -21,12 +21,12 @@ vector<double> getRandomVector(int d) {
 int bf_nnSearch(const vector<vector<double>> &data, const vector<double> &query) {
 	int n = N; int d = DIM;
 	double best_dist = DBL_MAX; int best_idx;
-	for (int i = 0; i < data.size(); i++) {
+	for (int i = 0; i < n; i++) {
 		double dist = 0;
 		for (int j = 0; j < d; j++) {
 			dist += (data[i][j] - query[j])*(data[i][j] - query[j]);
 		}
-		cout << dist << endl;
+		
 		if (best_dist > dist) {
 			best_dist = dist; best_idx = i;
 		}
@@ -41,9 +41,9 @@ int main(void) {
 
 	vector<double> query = getRandomVector(DIM);
 	clock_t start = clock();
-	cout << bf_nnSearch(data, query) << endl;
+	cout << "최단 이웃 인덱스 : " << bf_nnSearch(data, query) << endl;
 	clock_t end = clock();
 	double time = double(end - start) / CLOCKS_PER_SEC;
-	cout << time << endl;
+	cout << "소요시간 : " << time << endl;
 	return 0;
 }

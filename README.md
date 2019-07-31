@@ -1,4 +1,4 @@
-# 2019학년도 1학기 문제해결실무(Algorithm2) (수정중)
+# 2019학년도 1학기 문제해결실무(Algorithm2)
  - 언어 : c++
  - 프로젝트 환경 : visual studio 2017
 
@@ -119,7 +119,7 @@
    N-Queen 문제 : 가로세로 길이가 n인 정사각형 체스판에 n개의 퀸을 배치하는 경우의 수를 계산(퀸은 가로,세로,대각선으로 이동가능하며, 이동경로상에 다른 퀸을 배치할 수 없다.)
 
 
-## Project5
+## Project5 (정렬과 탐색)
 - ### 01.insertion Sort
    ![image](https://user-images.githubusercontent.com/7812961/62139394-3cb1f180-b324-11e9-8ebf-8045a9b9664a.png)
 
@@ -140,12 +140,39 @@
 
    기수정렬 알고리즘
 
-- ### 05.Binary search
+- ### 05.binary Search
    ![image](https://user-images.githubusercontent.com/7812961/62140974-d11d5380-b326-11e9-8835-3b21449d68d4.png)
 
    이진탐색 알고리즘
 
-- ### 06.
+- ### 06.nearest-neighbor Search
+   ![image](https://user-images.githubusercontent.com/7812961/62178351-c218be80-b383-11e9-9292-c84f7898ff58.png)
 
+   d차원의 최단이웃탐색 알고리즘
 
-   
+## Project6 (동적 프로그래밍,DP:Dynamic Programming)
+- ### 01.Fibonacci
+   ![image](https://user-images.githubusercontent.com/7812961/62178655-d27d6900-b384-11e9-8f26-82982d470ab9.png)
+
+   동적프로그래밍 방식을 이용한 피보나치수 계산 알고리즘
+
+- ### 02.short Path
+   ![image](https://user-images.githubusercontent.com/7812961/62185626-2d6f8a00-b39e-11e9-8874-dcd0dd2736c1.png)
+
+   동적프로그래밍 방식의 최단거리 알고리즘
+
+- ### 03.floyd Warshall
+   ![image](https://user-images.githubusercontent.com/7812961/62185714-79baca00-b39e-11e9-9282-08d302a8b64d.png)
+
+   floyd Warshall알고리즘의 최단거리 계산
+
+- ### 04.matrix Chain Multiplication
+   ![image](https://user-images.githubusercontent.com/7812961/62185902-25fcb080-b39f-11e9-8bca-44c5984f56bd.png)
+
+   행렬의 곱셈계산시 곱셈의 횟수를 최소화하는 식 계산
+
+## homework1
+- ### d차원의 최단이웃탐색시 Brute-force방식의 알고리즘과 k-d tree방식의 알고리즘의 비교
+   참고 : https://rosettacode.org/wiki/K-d_tree
+
+   ![image](https://user-images.githubusercontent.com/7812961/62187313-eb494700-b3a3-11e9-9fe4-c2114b901180.jpg)

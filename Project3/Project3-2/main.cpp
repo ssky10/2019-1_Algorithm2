@@ -18,7 +18,7 @@ string deci_to_any(int n, int radix) {
 }
 
 int main(void) {
-	cout << deci_to_any(140, 8).c_str() << endl;
-	cout << deci_to_any(140, 16).c_str() << endl;
+	cout << "140의 8진법 표기 : " << deci_to_any(140, 8).c_str() << endl;
+	cout << "140의 16진법 표기 : " << deci_to_any(140, 16).c_str() << endl;
 	return 0;
 }
